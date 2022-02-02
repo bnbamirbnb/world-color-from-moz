@@ -1,0 +1,185 @@
+body{
+    --cube1wh: 280px;
+    --cube2wh: 130px;
+    --cube3wh: 200px;
+    background-color: #0f0f0f;
+}
+.cube1 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    right: 300px;
+    width: var(--cube1wh);
+    height:var(--cube1wh);
+    transform-style: preserve-3d;
+    animation: rotate 7s infinite linear;
+}
+.face1{
+    width: var(--cube1wh);
+    height: var(--cube1wh);
+    position: absolute;
+    background: linear-gradient(#0f0f0f,#0101ee);
+}
+#front1 {
+    transform: translateZ(calc(var(--cube1wh)/2*-1));
+}
+#back1 {
+    transform: translateZ(calc(var(--cube1wh)/2));
+}
+#right1 {
+    transform: rotateY(90deg) translateZ(calc(var(--cube1wh)/2));
+}
+#left1 {
+    transform: rotateY(-90deg) translateZ(calc(var(--cube1wh)/2));
+}
+@keyframes rotate {
+    0% { transform: rotateX(-30deg ) rotateY(0deg ); }
+    100% { transform: rotateX(-30deg ) rotateY(360deg ); }
+}
+.topp1 {
+    width: var(--cube1wh);
+    height: var(--cube1wh);
+    position: absolute;
+    background-color: #251c1c;
+    transform: rotateX(90deg) translateZ(calc(var(--cube1wh)/2));
+}
+.shadowcube1 {
+    width: var(--cube1wh);
+    height: var(--cube1wh);
+    position: absolute;
+    background-color: #1d1faf;
+    filter: blur(20px);
+    transform: rotateX(90deg) translateZ(calc(var(--cube1wh)*-1 + var(--cube1wh)/10));
+    box-shadow: 0 0 120px rgba(0, 0, 255, 0.2),
+    0 0 200px rgba(0, 0, 255,0.4),
+    0 0 300px rgba(0, 0, 255, 0.6),
+    0 0 400px rgba(0, 0, 255, 1);
+}
+.cube2 {
+    position: absolute;
+    top: 100px;
+    left: 770px;
+    right: 300px;
+    width:var(--cube2wh);
+    height:var(--cube2wh);
+    transform-style: preserve-3d;
+    animation: rotate 6s infinite linear;
+}
+.face2{
+    width: var(--cube2wh);
+    height: var(--cube2wh);
+    position: absolute;
+    background: linear-gradient(#0f0f0f,#ee0101);
+}
+#front2 {
+    transform: translateZ(calc(var(--cube2wh)/2*-1));
+}
+#back2 {
+    transform: translateZ(calc(var(--cube2wh)/2));
+}
+#right2 {
+    transform: rotateY(90deg) translateZ(calc(var(--cube2wh)/2));
+}
+#left2 {
+    transform: rotateY(-90deg) translateZ(calc(var(--cube2wh)/2));
+}
+.topp2 {
+    width: var(--cube2wh);
+    height: var(--cube2wh);
+    position: absolute;
+    background-color: #251c1c;
+    transform: rotateX(90deg) translateZ(calc(var(--cube2wh)/2));
+}
+.shadowcube2 {
+    width: var(--cube2wh);
+    height: var(--cube2wh);
+    position: absolute;
+    background-color: #f10e0e;
+    filter: blur(20px);
+    transform: rotateX(90deg) translateZ(calc(var(--cube2wh)*-1 + var(--cube2wh)/10));
+    box-shadow: 0 0 120px rgba(255, 0,0, 0.2),
+    0 0 200px rgba(255, 0, 0,0.4),
+    0 0 300px rgba(255, 0, 0, 0.6),
+    0 0 400px rgba(255, 0, 0, 1);
+}
+.cube3 {
+    position: absolute;
+    top: 330px;
+    left: 1000px;
+    width: var(--cube3wh);
+    height:var(--cube3wh);
+    transform-style: preserve-3d;
+    animation: rotate 8s infinite linear;
+}
+.face3{
+    width: var(--cube3wh);
+    height: var(--cube3wh);
+    position: absolute;
+    background: linear-gradient(#0f0f0f,#1dee01);
+}
+#front3 {
+    transform: translateZ(calc(var(--cube3wh)/2*-1));
+}
+#back3 {
+    transform: translateZ(calc(var(--cube3wh)/2));
+}
+#right3 {
+    transform: rotateY(90deg) translateZ(calc(var(--cube3wh)/2));
+}
+#left3 {
+    transform: rotateY(-90deg) translateZ(calc(var(--cube3wh)/2));
+}
+.topp3 {
+    width: var(--cube3wh);
+    height: var(--cube3wh);
+    position: absolute;
+    background-color: #251c1c;
+    transform: rotateX(90deg) translateZ(calc(var(--cube3wh)/2));
+}
+.shadowcube3 {
+    width: var(--cube3wh);
+    height: var(--cube3wh);
+    position: absolute;
+    background-color: #10f009;
+    filter: blur(20px);
+    transform: rotateX(90deg) translateZ(calc(var(--cube3wh)*-1 + var(--cube3wh)/10));
+    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+    0 0 200px rgba(0, 255, 0,0.4),
+    0 0 300px rgba(0, 255, 0, 0.6),
+    0 0 400px rgba(0, 255, 0, 1);
+}
+
+h1 {
+    position: absolute;
+    left: 500px;
+    top: 220px;
+    font-weight: 90;
+    font-size: 110px;
+    background: linear-gradient(30deg, #f32170,
+    #ff6b08, #cf23cf, #eedd44);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar {
+    background: #797979;direction: rtl;text-align: right;padding-right: 30px;
+}
+ul.menu{
+    position: absolute;
+}
+ul.menu li {
+    border-radius: 50px;
+    position: relative;
+    right: 870px;
+    font-size: 30px;
+    display: inline-block;
+    background-color: #221c1c;
+    list-style: none; 
+}
+ul.menu li a {
+    color: white;
+     display:inline-block;
+     padding: 12px;
+}
+ul.menu li a:hover {
+    color: red; 
+}
