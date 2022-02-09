@@ -1,0 +1,50 @@
+form{
+    padding: 145px 20px;
+    position: fixed;
+    top: -8%;
+    left: 36%;
+    font-size: 115%;
+}
+input[type=text], input[type=password] {
+    font-size: 90%;
+    width: 100%;
+    padding: 16px 35px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+input.login_botton {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 100%;
+    border-radius: 28px;
+    padding: 10px 6px;
+    margin: 10px 60%;
+    border: solid ;
+    border-color: black;
+    cursor: pointer;
+    width: 40%;
+  }
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1.sign_in{
+    position: fixed;
+    font-size: 300%;
+    font-style: inherit;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: -3%;
+    left: 45.6%;
+}
+label.check_box_remember{
+    position: absolute;
+    top: 66%;
+    left: 11.5%;
+}
+input.check_box_remember{
+    position: absolute;
+    top: 66.3%;
+    left: 4%;
+}
